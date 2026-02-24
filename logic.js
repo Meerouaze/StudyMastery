@@ -1,5 +1,4 @@
-document.addEventListener('click', function() {
-    const budgetInput = document.getElementById('Budgetinput');
+const budgetInput = document.getElementById('Budgetinput');
     const estimateBtn = document.getElementById('Estimate-btn');
     const cards = document.querySelectorAll('.offr-card');
     
@@ -14,11 +13,11 @@ document.addEventListener('click', function() {
         });
         
 
-        if (budget < 8) {
+        if (budget < 10) {
             cards[0].style.transform = 'scale(1.1)';
             cards[0].style.boxShadow = '0 0 40px rgba(230, 169, 4, 0.8)';
             cards[0].style.borderColor = '#e6a904';
-        } else if (budget < 19) {
+        } else if (budget < 20) {
             cards[1].style.transform = 'scale(1.1)';
             cards[1].style.boxShadow = '0 0 40px rgba(230, 169, 4, 0.8)';
             cards[1].style.borderColor = '#e6a904';
@@ -28,10 +27,11 @@ document.addEventListener('click', function() {
             cards[2].style.borderColor = '#e6a904';
         }
     });
-});
-document.addEventListener('click', function() {
+
+
     const signInForm = document.getElementById('signin');
     signInForm.addEventListener('submit', function(event) {
+        event.preventDefault();
         const username = document.getElementById('username').value.trim();
         const email = document.getElementById('email').value.trim();
         const password = document.getElementById('password').value.trim();
@@ -75,7 +75,7 @@ document.addEventListener('click', function() {
 
         setTimeout(function() {
             successMessage.remove();
-        }, 4000);
+        }, 5000);
         return;
     });
-});
+
