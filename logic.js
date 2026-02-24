@@ -11,8 +11,9 @@
             card.style.borderColor = '';
             card.style.background = '';
         });
-        
-
+        if (budget < 5){
+            alert("please put an acceptable amount")
+        }
         if (budget < 10) {
             cards[0].style.transform = 'scale(1.1)';
             cards[0].style.boxShadow = '0 0 40px rgba(230, 169, 4, 0.8)';
@@ -78,4 +79,5 @@
         }, 5000);
         return;
     });
+
 
