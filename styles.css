@@ -6,7 +6,7 @@ html{
     font-family: "Oswald" , sans-serif ,serif;
 }
 .StudMastery{
-    background-image:url(imgs/iewek-gnos-hhUx08PuYpc-unsplash.jpg);
+    background-image:url(iewek-gnos-hhUx08PuYpc-unsplash.jpg);
   background-size: cover;
     background-position: center;
     background-attachment:scroll;
@@ -598,3 +598,4 @@ i{
         justify-content: center;
     }
 }
+
