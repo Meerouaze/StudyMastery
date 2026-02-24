@@ -1,4 +1,4 @@
-const budgetInput = document.getElementById('Budgetinput');
+ const budgetInput = document.getElementById('Budgetinput');
     const estimateBtn = document.getElementById('Estimate-btn');
     const cards = document.querySelectorAll('.offr-card');
     
